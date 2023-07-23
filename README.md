@@ -34,3 +34,42 @@ The main benefit of using a factory constructor is that it allows you to control
 - ⚡️ Efficient object creation process.
 - 🛡️ Controlled data validations.
 - 🔄 Ability to return cached instances.
+
+# Dynamic Variable
+## var
+**var** variable once assigned the type can not change. </br>
+```dart
+  void main() {
+  var a = 10;
+  print(a);
+  a = 'Bob';
+  print(a);
+  a = 'c';
+  print(a);
+  a = 1.00012;
+  print(a);
+}
+
+```
+The above code will show error.
+## dynamic
+**dynamic** variable once assigned the type can be changed.
+```dart
+void main() {
+  dynamic a = 10;
+  print(a);
+  a = 'Bob';
+  print(a);
+  a = 'c';
+  print(a);
+  a = 1.00012;
+  print(a);
+}
+```
+But this code will run. Here is the output:
+```
+10
+Bob
+c
+1.00012
+```
